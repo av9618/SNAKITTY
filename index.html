@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Guide your growing cat snake through the garden and catch every tasty fish.">
+<meta name="color-scheme" content="light dark">
+<title>Meowgic Snake | WhiskerWorks Arcade</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐱</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <p class="brand">WhiskerWorks arcade</p>
+    <h1>Meowgic Snake</h1>
+    <button id="new">New game</button>
+  </header>
+  <section class="scores">
+    <div><span>Current score</span><strong id="score">0</strong></div>
+    <div><span>Best score</span><strong id="best">0</strong></div>
+  </section>
+  <div class="board">
+    <canvas id="c" width="480" height="480" aria-label="Snake game board"></canvas>
+    <div id="overlay">Press a key to start</div>
+  </div>
+  <p class="hint">Use arrow keys or WASD to move</p>
+  <section class="card">
+    <h2>Today's mission: catch 10 fish</h2>
+    <progress id="bar" max="10" value="0"></progress>
+    <p id="mission">0 / 10 caught</p>
+  </section>
+  <section class="card">
+    <h2>How to play</h2>
+    <p>Guide your growing cat through the garden. Don't bump into the walls or yourself! Fish spawn in open spots, so plan your turns before you pounce.</p>
+  </section>
+  <footer>Made for curious cats</footer>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
